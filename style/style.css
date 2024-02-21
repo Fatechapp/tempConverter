@@ -1,0 +1,65 @@
+:root {
+    --black: #0D0C11;
+    --blue: #6276DC;
+    --white: #F5F5F5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+html {
+    font-size: 16px;
+}
+
+/* <a> */
+a {
+    color: var(--white);
+    transition: 0.25s ease-out;
+}
+a:hover {
+    color: var(--blue);
+    transition: 0.25s ease-out;
+}
+
+/* NAV */
+nav {
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75rem;
+}
+.nav-item .kiri img {
+    height: 3rem;
+}
+.nav-item .kanan {
+    display: flex;
+    gap: 4rem;
+}
+
+/* APPS */
+.apps {
+    color: var(--white);
+    background: var(--black);
+    height: 20rem;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media (max-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+}
