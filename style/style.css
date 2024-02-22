@@ -56,7 +56,7 @@ nav {
 /* APPS */
 .apps {
     color: var(--white);
-    padding: 1rem 0rem;
+    padding: 3rem 0rem;
 
     display: flex;
     flex-direction: column;
@@ -67,22 +67,52 @@ nav {
 .apps h1 {
     font-size: 3rem;
 }
+.apps-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.input-temperature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.result-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+}
 .current-time {
     background: var(--white);
     color: var(--black);
-    padding:  0.5rem 1rem;
-
+    padding:  0.35rem 0.75rem;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.75rem;
-
+    
     font-size: 0.75rem;
-
+    
     position: relative;
     left: 10rem;
     top: 2rem;
 }
+/* 
 .input-temperature {
     display: flex;
     flex-direction: column;
@@ -95,11 +125,11 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    min-width: 30rem;
-    max-width: 40rem;
-}
+    width: 30rem;
+    width: 40rem;
+} */
 /* RESULT */
-.input-text {
+/* .input-text {
     background: var(--white);
     padding: 0rem 1rem;
     border-radius: 0.5rem;
@@ -141,7 +171,7 @@ nav {
     align-items: center;
     gap: 2rem;
     width: 50rem;
-}
+} */
 
 @media (max-width: 700px) {
     html {
@@ -149,9 +179,9 @@ nav {
     }
 
     /* APPS */
-    .current-time {
+    /* .current-time {
         display: none;
-    }
+    } */
 }
 @media (max-width: 550px) {
     html {
@@ -159,14 +189,14 @@ nav {
     }
 
     /* NAV */
-    .nav-item .kanan{
+    /* .nav-item .kanan{
         display: none;
-    }
+    } */
 
     /* APPS */
-    .current-time {
+    /* .current-time {
         display: none;
-    }
+    } */
     
 }
 @media (max-width: 400px) {
@@ -178,16 +208,16 @@ nav {
 
 
     /* APPS */
-    .apps {
+    /* .apps {
         padding:  7rem 2rem;
     }
     .apps h1 {
         font-size: 3rem;
-    }
+    } */
     .current-time {
         display: none;
     }
-    .input-temperature-info {
+    /* .input-temperature-info {
         width: 20rem;
     }
     .input-text {
@@ -200,6 +230,6 @@ nav {
         justify-content: center;
         align-items: center;
         width: 12rem;
-    }
+    } */
 
 }
