@@ -149,4 +149,27 @@ nav {
     html {
         font-size: 10px;
     }
+
+    /* APPS */
+    .apps {
+        padding:  18rem 2rem;
+    }
+    .apps h1 {
+        font-size: 2rem;
+    }
+    .input-temperature-info {
+        width: 20rem;
+    }
+    .input-text {
+        width: 15rem;
+    }
+    .input-result {
+        width: 12rem;
+    }
+    .result-view {
+        justify-content: center;
+        align-items: center;
+        width: 12rem;
+    }
+
 }
