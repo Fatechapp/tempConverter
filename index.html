@@ -12,6 +12,9 @@
     <link rel="icon" href="asset/tempoConverter-icon.png" type="icon">
 
     <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!--SCRIPT-->
     <script src="script/script.js" defer></script>
@@ -31,7 +34,24 @@
         </div>
     </nav>
     <section class="apps">
+        <div class="current-time" id="currentTime"></div>
         <h1>Convert Temperature</h1>
+        <div class="input-temperature">
+            <form action="" class="input-temperature-info">
+                <input type="text" class="input-text" placeholder="celsius">
+                <input type="checkbox" name="" id="" value="">
+                <input type="submit" value="convert" class="input-submit">
+            </form>
+            <section class="result">
+                <h3>Result</h3>
+                <div class="result-view">
+                    <input type="text" name="" id="" class="input-result input-text" placeholder="Fahrenheit" readonly>
+                    <input type="text" name="" id="" class="input-result input-text" placeholder="Kelvin" readonly>
+                    <input type="text" name="" id="" class="input-result input-text" placeholder="Rankine" readonly>
+                    <input type="text" name="" id="" class="input-result input-text" placeholder="Reaumur" readonly>
+                </div>
+            </section>
+        </div>
     </section>
 </body>
 </html>
