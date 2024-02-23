@@ -94,7 +94,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    width: 50%;
+    width: 75%;
 }
 .current-time {
     background: var(--white);
@@ -111,6 +111,29 @@ nav {
     position: relative;
     left: 10rem;
     top: 2rem;
+}
+.input-text {
+    background: var(--white);
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    width: 30rem;
+    height: 2.5rem;
+}
+.input-submit {
+    background: var(--blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+.input-result {
+    background: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 20rem !important;
+    height: 2.5rem;
 }
 /* 
 .input-temperature {
