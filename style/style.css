@@ -56,7 +56,7 @@ nav {
 /* APPS */
 .apps {
     color: var(--white);
-    padding: 3rem 0rem;
+    padding: 1rem 0rem;
 
     display: flex;
     flex-direction: column;
@@ -81,6 +81,10 @@ nav {
     align-items: center;
     gap: 1.5rem;
 }
+.input-temperature-info {
+    display: flex;
+    gap: 0.5rem;
+}
 .result {
     display: flex;
     flex-direction: column;
@@ -94,7 +98,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    width: 75%;
+    width: 50%;
 }
 .current-time {
     background: var(--white);
@@ -117,7 +121,7 @@ nav {
     padding: 0rem 1rem;
     border-radius: 0.5rem;
     font-size: 1.25rem;
-    width: 30rem;
+    width: 20rem;
     height: 2.5rem;
 }
 .input-submit {
@@ -128,12 +132,24 @@ nav {
     cursor: pointer;
     transition: 0.15s ease-in-out;
 }
+.input-submit:hover {
+    background: var(--white);
+    color: var(--blue);
+    transition: 0.15s ease-in-out;
+}
 .input-result {
     background: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    width: 20rem !important;
+    width: 15rem !important;
     height: 2.5rem;
+}
+.temp-selected {
+    color: var(--blue);
+    background: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: var(--blue) 2px solid;
 }
 /* 
 .input-temperature {
@@ -240,14 +256,11 @@ nav {
     .current-time {
         display: none;
     }
-    /* .input-temperature-info {
-        width: 20rem;
-    }
     .input-text {
         width: 18rem;
     }
-    .input-result {
-        width: 12rem;
+    /* .input-temperature-info {
+        width: 20rem;
     }
     .result-view {
         justify-content: center;
