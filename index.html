@@ -1,68 +1,328 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tempConverter</title>
+:root {
+    --black: #0D0C11;
+    --darkBlue: #201E27;
+    --blue: #6276dc;
+    --lightblue: #929fde;
+    --white: #F5F5F5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    font-size: 16px;
+}
+body {
+    background: var(--black);
+}
 
-    <!--STYLE-->
-    <link rel="stylesheet" href="style/style.css">
+/* <a> */
+a {
+    color: var(--white);
+    transition: 0.25s ease-out;
+}
+a:hover {
+    color: var(--blue);
+    transition: 0.25s ease-out;
+}
 
-    <!--ICON-->
-    <link rel="icon" href="asset/tempoConverter-icon.png" type="icon">
+/* NAV */
+nav {
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 20px var(--white);
+}
+.nav-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 75rem;
+}
+.nav-item .kiri img {
+    height: 3rem;
+}
+.nav-item .kanan {
+    display: flex;
+    gap: 4rem;
+}
 
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+/* APPS */
+.apps {
+    color: var(--white);
+    padding: 1rem 0rem;
 
-    <!--SCRIPT-->
-    <script src="script/script.js" defer></script>
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.apps h1 {
+    font-size: 3rem;
+}
+.apps-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.input-temperature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.input-temperature-info {
+    display: flex;
+    gap: 0.5rem;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.result-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+}
+.current-time {
+    background: var(--white);
+    color: var(--black);
+    padding:  0.35rem 0.75rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    
+    font-size: 0.75rem;
+    
+    position: relative;
+    left: 10rem;
+    top: 2rem;
+}
+.input-text {
+    background: var(--white);
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    width: 20rem;
+    height: 2.5rem;
+}
+.input-submit {
+    background: var(--blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+.input-submit:hover {
+    background: var(--white);
+    color: var(--blue);
+    transition: 0.15s ease-in-out;
+}
+.input-result {
+    background: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 15rem !important;
+    height: 2.5rem;
+}
+.temp-selected {
+    color: var(--blue);
+    background: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: var(--blue) 2px solid;
+}
+.temp-selected:hover {
+    color: var(--white);
+    background: var(--lightblue);
+}
+/* 
+.input-temperature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.input-temperature-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 30rem;
+    width: 40rem;
+} */
+/* RESULT */
+/* .input-text {
+    background: var(--white);
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    width: 30rem;
+    height: 2.5rem;
+}
+.input-result {
+    background: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 20rem !important;
+    height: 2.5rem;
+}
+.input-submit {
+    background: var(--blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+.input-submit:hover {
+    background: var(--white);
+    color: var(--blue);
+    transition: 0.15s ease-in-out;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.result-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 50rem;
+} */
 
-</head>
-<body>
-    <nav>
-        <div class="nav-item">
-            <div class="kiri">
-                <img src="asset/tempoConverter-logo.png" alt="">
-            </div>
-            <div class="kanan">
-                <a href="#">convert</a>
-                <a href="#">how to use</a>
-                <a href="#">equation</a>
-            </div>
-        </div>
-    </nav>
-    <section class="apps">
-        <div class="apps-content">
-            <div class="current-time" id="currentTime"></div>
-            <h1>Convert Temperature</h1>
-            <div class="input-temperature">
-                <form action="" class="input-temperature-info">
-                    <input type="text" class="input-text" placeholder="celsius">
-                    <a href="#" class="temp-selected">C</a>
-                    <input type="submit" value="convert" class="input-submit">
-                </form>
-                <section class="result">
-                    <h2>Result</h2>
-                    <div class="result-view">
-                        <input type="text" name="" id="" class="input-result input-text" placeholder="Fahrenheit" readonly>
-                        <input type="text" name="" id="" class="input-result input-text" placeholder="Kelvin" readonly>
-                        <input type="text" name="" id="" class="input-result input-text" placeholder="Rankine" readonly>
-                        <input type="text" name="" id="" class="input-result input-text" placeholder="Reaumur" readonly>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section>
-    <section class="introduction" id="introduction">
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    </section>
-    <section class="tutorial" id="tutorial">
+    padding: 2rem;
+    color: var(--white);
+    background: var(--darkBlue);
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+.footer-info, .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-copyright img {
+    height: 3rem;
+}
+.footer-list-info {
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-content .support img {
+    border-radius: 1.25rem;
+    width: 6rem;
+}
 
-    </section>
-    <section class="equation" id="equation">
+@media (max-width: 700px) {
+    html {
+        font-size: 13px;
+    }
 
-    </section>
-</body>
-</html>
+    /* APPS */
+    /* .current-time {
+        display: none;
+    } */
+}
+@media (max-width: 550px) {
+    html {
+        font-size: 11.5px;
+    }
+
+    /* NAV */
+    /* .nav-item .kanan{
+        display: none;
+    } */
+
+    /* APPS */
+    /* .current-time {
+        display: none;
+    } */
+    
+}
+@media (max-width: 400px) {
+    html {
+        font-size: 10px;
+    }
+
+    /* NAV */
+
+
+    /* APPS */
+    /* .apps {
+        padding:  7rem 2rem;
+    }
+    .apps h1 {
+        font-size: 3rem;
+    } */
+    .current-time {
+        display: none;
+    }
+    .input-text {
+        width: 18rem;
+    }
+    /* .input-temperature-info {
+        width: 20rem;
+    }
+    .result-view {
+        justify-content: center;
+        align-items: center;
+        width: 12rem;
+    } */
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        padding: 2rem;
+        color: var(--white);
+        background: var(--darkBlue);
+    }
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5rem;
+    }
+}
