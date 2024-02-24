@@ -21,3 +21,4 @@ function updateCurrentTime() {
 updateCurrentTime();
 
 setInterval(updateCurrentTime, 1000);
+
