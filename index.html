@@ -38,22 +38,56 @@
             <div class="current-time" id="currentTime"></div>
             <h1>Convert Temperature</h1>
             <div class="input-temperature">
-                <form action="" class="input-temperature-info">
-                    <input type="text" class="input-text" placeholder="celsius">
-                    <input type="checkbox" name="" id="" value="">
+                <form action="#" class="input-temperature-info" onsubmit="convertTemperature();  return false;">
+                    <input id="celsiusInput" type="text" class="input-text" placeholder="celsius">
+                    <a href="#" class="temp-selected">C</a>
                     <input type="submit" value="convert" class="input-submit">
                 </form>
                 <section class="result">
-                    <h3>Result</h3>
+                    <h2>Result</h2>
                     <div class="result-view">
-                        <input type="text" name="" id="" class="input-result input-text" placeholder="Fahrenheit" readonly>
-                        <input type="text" name="" id="" class="input-result input-text" placeholder="Kelvin" readonly>
-                        <input type="text" name="" id="" class="input-result input-text" placeholder="Rankine" readonly>
-                        <input type="text" name="" id="" class="input-result input-text" placeholder="Reaumur" readonly>
+                        <input id="fahrenheitInput" type="text" name="" id="" class="input-result input-text" placeholder="Fahrenheit" readonly>
+                        <input id="kelvinInput" type="text" name="" id="" class="input-result input-text" placeholder="Kelvin" readonly>
+                        <input id="rankineInput" type="text" name="" id="" class="input-result input-text" placeholder="Rankine" readonly>
+                        <input id="reamurInput" type="text" name="" id="" class="input-result input-text" placeholder="Reaumur" readonly>
                     </div>
                 </section>
             </div>
         </div>
     </section>
+    <section class="introduction" id="introduction">
+
+    </section>
+    <section class="tutorial" id="tutorial">
+
+    </section>
+    <section class="equation" id="equation">
+
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <img src="asset/tempoConverter-logo.png" alt="">
+                <p>© 2024. All rights reserved</p>
+            </div>
+            <div class="footer-info">
+                <h3>DEVELOPER</h3>
+                <div class="footer-list-info">
+                    <a href="#">Andi Muhammad Ilham Darajad</a>
+                    <a href="#">Fatecha Rizqi Putra Prasetyo</a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h3>CONTACT</h3>
+                <div class="footer-list-info">
+                    <a href="mailto:infoisgbinus@gmail.com">infoisgbinus@gmail.com</a>
+                </div>
+            </div>
+            <div class="support">
+                <p>supported by:</p>
+                <img src="asset/ISG-logo.png" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
