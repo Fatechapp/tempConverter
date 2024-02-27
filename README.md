@@ -10,5 +10,5 @@ tempConverter is a web-app designed to make it easier for users to convert tempe
 3. Then you can press the 'convert' button to display the temperature conversion results.
 
 ## Team
-- [@Midle19](https://github.com/Midle19)
-- [@Fatechapp]
+- Andi Muhammad Ilham Daraja - [@Midle19](https://github.com/Midle19)
+- Fatecha Rizqi Putra Prasetyo - [@Fatechapp](https://github.com/Fatechapp)
