@@ -30,7 +30,7 @@ a:hover {
     color: var(--blue);
     transition: 0.25s ease-out;
 }
-a::after {
+nav a::after, footer a::after {
     content: '';
     display: block;
     padding-bottom: 0.5rem;
@@ -39,7 +39,7 @@ a::after {
     transform: scaleX(0);
     transition: 0.15s ease-in-out;
 }
-a:hover::after {
+nav a:hover::after, footer a:hover::after {
     transform: scaleX(1);
     transition: 0.15s ease-in-out;
 }
@@ -251,6 +251,11 @@ span {
     color: var(--white);
     padding: 1rem 5rem;
 }
+.introduction-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+} 
 .introduction-information, .tutorial-content  {
     display: flex;
     flex-direction: column;
@@ -305,6 +310,11 @@ footer {
 footer .footer-content .support img {
     border-radius: 1.25rem;
     width: 6rem;
+}
+.support {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 @media (max-width: 700px) {
