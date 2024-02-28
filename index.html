@@ -22,6 +22,7 @@
 
 </head>
 <body>
+    <!--NAV START-->
     <nav>
         <div class="nav-item">
             <div class="kiri">
@@ -34,28 +35,33 @@
             </div>
         </div>
     </nav>
+    <!--NAV END-->
+
+    <!--APPS START-->
     <section class="apps">
         <div class="apps-content">
             <div class="current-time" id="currentTime"></div>
             <h1>Convert Temperature</h1>
             <div class="input-temperature">
                 <form action="#" class="input-temperature-info" onsubmit="convertTemperature();  return false;">
-                    <input id="celsiusInput" type="text" class="input-text" placeholder="celsius">
+                    <input id="celsiusInput" type="number" class="input-text" placeholder="celsius">
                     <a href="#" class="temp-selected">C</a>
-                    <input type="submit" value="convert" class="input-submit">
                 </form>
                 <section class="result">
                     <h2>Result</h2>
                     <div class="result-view">
-                        <input id="fahrenheitInput" type="text" name="" id="" class="input-result" placeholder="Fahrenheit" readonly>
-                        <input id="kelvinInput" type="text" name="" id="" class="input-result" placeholder="Kelvin" readonly>
-                        <input id="rankineInput" type="text" name="" id="" class="input-result" placeholder="Rankine" readonly>
-                        <input id="reamurInput" type="text" name="" id="" class="input-result" placeholder="Reaumur" readonly>
+                        <input id="fahrenheitInput" type="number" name="" id="" class="input-result" placeholder="Fahrenheit" readonly>
+                        <input id="kelvinInput" type="number" name="" id="" class="input-result" placeholder="Kelvin" readonly>
+                        <input id="rankineInput" type="number" name="" id="" class="input-result" placeholder="Rankine" readonly>
+                        <input id="reamurInput" type="number" name="" id="" class="input-result" placeholder="Reaumur" readonly>
                     </div>
                 </section>
             </div>
         </div>
     </section>
+    <!--APPS END-->
+
+    <!--INTRODUCTION START-->
     <section class="introduction" id="introduction">
         <div class="introduction-content">
             <div class="introduction-information">
@@ -63,10 +69,13 @@
                 <p>tempConverter is a web-app designed to make it easier for users to convert temperatures from one unit to another. With an intuitive and simple interface, this web-app provides an easy and efficient user experience.</p>
             </div>
             <div class="introduction-vector">
-
+                <h3>IMG</h3>
             </div>
         </div>
     </section>
+    <!-- INTRODUCTION END -->
+
+    <!-- TUTORIAL START -->
     <section class="tutorial" id="tutorial">
         <div class="tutorial-content">
             <h2>How To Use</h2>
@@ -77,6 +86,8 @@
             </ol>
         </div>
     </section>
+    <!-- TUTORIAL END -->
+
     <section class="equation" id="equation">
         <div class="equation-content">
             <h2>Equation</h2>
@@ -103,7 +114,9 @@
             </div>
             <div class="support">
                 <p>supported by:</p>
-                <img src="asset/ISG-logo.png" alt="">
+                <a href="#">
+                    <img src="asset/ISG-logo.png" alt="">
+                </a>
             </div>
         </div>
     </footer>
